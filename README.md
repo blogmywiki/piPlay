@@ -14,7 +14,7 @@ Put this Python 3 program in the same directory as a bunch of audio files and ru
 Inside, it is like a sausage. You do not want to know how it works, what it is made of.
 
 # No, really, how does it work?
-It is based on a command-line Python program I wrote for Mac OS X that does a similar thing. It is a cut-and-shunt job and a horrible piece of programming that already needs a re-write from the ground up.
+It is based on [PyPlay](https://github.com/blogmywiki/PyPlay), a command-line Python program I wrote for Mac OS X that does a similar thing. The GUI PiPlay you see here is a cut-and-shunt job and a horrible piece of programming that already needs a re-write from the ground up.
 
 It is a simple GUI-wrapper written using Tkinter for omxplayer. Omxplayer has some advantages: it can play almost any kind of audio file and allows extraction of metadata. But it's slow to start: there will be a short delay between pressing 'play' and the audio starting. I used aplay instead of omxplayer in [my Raspberry Pi cartwall](http://www.suppertime.co.uk/blogmywiki/2018/03/cartwall/) for this reason, but that only supports WAV files.
 
