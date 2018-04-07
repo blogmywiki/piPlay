@@ -5,7 +5,7 @@ A simple Raspberry Pi audio playout system for radio or theatre.
 It plays audio files. One track at a time. Then stops.
 This may not sound like a big deal, but most GUI-front ends for audio players play though a playlist without stopping. If you work in radio or theatre, this is not what you want. You want to play 1 track at a time under your control.
 
-The idea is based entirely on CoolPlay, a Windows app which does the same thing far better. CoolPlay was widely used in BBC Radio News a few years ago in BBC World Service and also, I believe, in Radio 1 Newsbeat, Radio 5 Live and some Radio 4  programmes as well. I designed the splash screen for CoolPlay but nothing else.
+The idea is based entirely on [CoolPlay](http://www.suppertime.co.uk/blogmywiki/2015/04/coolplaymac/), a Windows app which does the same thing far better. CoolPlay was widely used in BBC Radio News a few years ago in BBC World Service and also, I believe, in Radio 1 Newsbeat, Radio 5 Live and some Radio 4  programmes as well. I designed the splash screen for CoolPlay but nothing else.
 
 # How do I use it?
 Put this Python 3 program in the same directory as a bunch of audio files and run it. If you don't aldeady have an M3U-format playlist in the folder, it will make one for you with the tracks in alphabetical order. Highlight the track you want to play and press the PLAY button. It will tell you what time it will end if it carries on playing and if there is metadata with artist and tarck title information this appears below the tracklist. Currently playing tracks are highlighted in green, the next track to be played in grey. Tracks that have been played in full turn blue.
