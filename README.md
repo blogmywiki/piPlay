@@ -10,6 +10,8 @@ The idea is based entirely on [CoolPlay](http://www.suppertime.co.uk/blogmywiki/
 # How do I use it?
 Put this Python 3 program in the same directory as a bunch of audio files and run it. If you don't aldeady have an M3U-format playlist in the folder, it will make one for you with the tracks in alphabetical order. Highlight the track you want to play and press the PLAY button. It will tell you what time it will end if it carries on playing and if there is metadata with artist and tarck title information this appears below the tracklist. There is a large clock with the current time constantly displayed. Currently playing tracks are highlighted in green, the next track to be played in grey. Tracks that have been played in full turn blue.
 
+It will cue-up the subsequent track (shown in grey) by default, but you can click on any track you like to line it up to be played next. Only 17 tracks are displayed, you may need to move down or up using the up/down arrow keys.
+
 # How does it work?
 Inside, it is like a sausage. You do not want to know how it works, what it is made of.
 
@@ -24,7 +26,7 @@ It scans the folder it's in and makes an M3U-format playlist file if it doesn't 
 Everything, really.
 - Scrollbar on the tracklist. If there are more than 17 tracks, you can scroll down with the arrow keys but there are currently no scrollbars and no indication that other tracks exist off-screen.
 - Add keypress controls for play, stop etc.
-- GPIO control for play/stop/up/down.
+- GPIO control for play/stop/up/down. You could connect these to buttons on a mixing desk or fader start etc.
 - End preview to play last 5 seconds or so of a track.
 - Some sort of visual warning that a track is about to end.
 - A progress bar. Probably beyond me.
