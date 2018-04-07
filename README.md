@@ -1,5 +1,5 @@
 # piPlay
-A simple Raspberry Pi audio playout system for radio or theatre.
+A simple Raspberry Pi audio playout system with GUI for radio or theatre. It runs from one Python 3 program on a vanilla Raspberry Pi running Raspbian and requires no other software or libraries to be installed.
 
 # What is it?
 It plays audio files. One track at a time. Then stops.
