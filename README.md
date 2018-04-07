@@ -18,7 +18,7 @@ It is based on [PyPlay](https://github.com/blogmywiki/PyPlay), a command-line Py
 
 It is a simple GUI-wrapper written using Tkinter for omxplayer. Omxplayer has some advantages: it can play almost any kind of audio file and allows extraction of metadata. But it's slow to start: there will be a short delay between pressing 'play' and the audio starting. I used aplay instead of omxplayer in [my Raspberry Pi cartwall](http://www.suppertime.co.uk/blogmywiki/2018/03/cartwall/) for this reason, but that only supports WAV files.
 
-It scans the folder its in and makes an M3U-format playlist file if it doesn't find one. It reads the filenames into an array along with the filename padded to a fixed length, its duration in seconds and its duration for display in minutes and seconds format. When you play a track it requests metadata for artist and track title info, but this probably should be part of the array with other track info.
+It scans the folder it's in and makes an M3U-format playlist file if it doesn't find one. It reads the filenames into an array along with the filename padded to a fixed length, its duration in seconds and its duration for display in minutes and seconds format. When you play a track it requests metadata for artist and track title info, but this probably should be part of the array with other track info.
 
 # To-do list
 Everything, really.
