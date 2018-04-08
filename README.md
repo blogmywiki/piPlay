@@ -14,6 +14,8 @@ Put this Python 3 program in the same directory as a bunch of audio files and ru
 
 It will cue-up the subsequent track (shown in grey) by default, but you can click on any track you like to line it up to be played next. Only 17 tracks are displayed, you may need to move down or up using the up/down arrow keys.
 
+Unlike CoolPlay, you cannot re-order, edit, delete or add tracks in the playlist. You would either have to edit the playlist.m3u file in another program or rename your audio files using numbers at the start to ensure they were in the correct order.
+
 It copes with spaces in filenames but not, at the moment, with characters like brackets and ampersands.
 
 # How does it work?
@@ -36,3 +38,4 @@ Everything, really.
 - Some sort of visual warning that a track is about to end.
 - A progress bar. Probably beyond me.
 - Some way of re-ordering / editing the playlist. If I can't do drag'n'drop then use up/down buttons?
+- Add ability to reload / refresh the playlist if it's been edited elsewhere.
