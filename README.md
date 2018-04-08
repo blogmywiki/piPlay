@@ -1,5 +1,5 @@
 # piPlay
-A simple Raspberry Pi audio playout system with GUI for radio or theatre. It runs from one Python 3 program on a vanilla Raspberry Pi running Raspbian and requires no other software or libraries to be installed.
+A simple Raspberry Pi audio playout system with GUI for radio or theatre. It runs from one Python 3 program on a vanilla Raspberry Pi running Raspbian and requires no other software or libraries to be installed.  It could be useful for school, student or community radio. (If you have access to a Windows computer – XP or later – I would strongly recommend using [CoolPlay](http://www.suppertime.co.uk/blogmywiki/2015/04/coolplaymac/) instead).
 
 ![Screen shot of PiPlay in use](http://www.suppertime.co.uk/blogmywiki/wp-content/uploads/2018/04/Screen-Shot-2018-04-07-at-13.58.38.png)
 
