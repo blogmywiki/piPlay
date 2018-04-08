@@ -1,6 +1,8 @@
 # piPlay
 A simple Raspberry Pi audio playout system with GUI for radio or theatre. It runs from one Python 3 program on a vanilla Raspberry Pi running Raspbian and requires no other software or libraries to be installed.
 
+![Screen shot of PiPlay in use](http://www.suppertime.co.uk/blogmywiki/wp-content/uploads/2018/04/Screen-Shot-2018-04-07-at-13.58.38.png)
+
 # What is it?
 It plays audio files. One track at a time. Then stops.
 This may not sound like a big deal, but most GUI-front ends for audio players play though a playlist without stopping. If you work in radio or theatre, this is not what you want. You want to play 1 track at a time under your control.
