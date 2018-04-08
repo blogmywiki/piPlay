@@ -14,6 +14,8 @@ Put this Python 3 program in the same directory as a bunch of audio files and ru
 
 It will cue-up the subsequent track (shown in grey) by default, but you can click on any track you like to line it up to be played next. Only 17 tracks are displayed, you may need to move down or up using the up/down arrow keys.
 
+It copes with spaces in filenames but not, at the moment, with characters like brackets and ampersands.
+
 # How does it work?
 Inside, it is like a sausage. You do not want to know how it works, what it is made of.
 
@@ -28,6 +30,7 @@ It scans the folder it's in and makes an M3U-format playlist file if it doesn't 
 Everything, really.
 - Scrollbar on the tracklist. If there are more than 17 tracks, you can scroll down with the arrow keys but there are currently no scrollbars and no indication that other tracks exist off-screen.
 - Add keypress controls for play, stop etc.
+- Fix support for brackets and ampersands in filenames.
 - GPIO control for play/stop/up/down. You could connect these to buttons on a mixing desk or fader start etc.
 - End preview to play last 5 seconds or so of a track.
 - Some sort of visual warning that a track is about to end.
