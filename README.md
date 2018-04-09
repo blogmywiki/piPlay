@@ -30,7 +30,7 @@ It scans the folder it's in and makes an M3U-format playlist file if it doesn't 
 
 # To-do list
 Everything, really.
-~~- Scrollbar on the tracklist. If there are more than 17 tracks, you can scroll down with the arrow keys but there are currently no scrollbars and no indication that other tracks exist off-screen.~~
+- ~~Scrollbar on the tracklist. If there are more than 17 tracks, you can scroll down with the arrow keys but there are currently no scrollbars and no indication that other tracks exist off-screen.~~ DONE!
 - Add keypress controls for play, stop etc.
 - Fix support for brackets and ampersands in filenames.
 - GPIO control for play/stop/up/down. You could connect these to buttons on a mixing desk or fader start etc.
