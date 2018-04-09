@@ -1,4 +1,5 @@
-#from tkinter import Tk, Label, Button, Listbox, Scrollbar, RIGHT, Y, deselect
+#!/usr/bin/env python3
+
 from tkinter import *
 import time, os, subprocess, datetime
 
@@ -154,15 +155,21 @@ print(trackList)
 
 class pyPlayGUI:
 
-    
+
     def __init__(self, master):
         self.master = master
-        master.title("piPlay 0.1")
+        master.title("piPlay 0.2")
 
-        self.label = Label(master, font=("Droid Sans Mono",10), text="          Track                                        |   Dur  | Status")
+        self.label = Label(master, font=("Droid Sans Mono",10), text="          Track                                        |   Dur")
         self.label.grid(row=0, column=0)
 
-        self.tracklistbox = Listbox(master, width=55, height=17, font=("Droid Sans Mono",14), selectmode="single")
+        self.tracklistbox = Listbox(master, width=50, height=17, font=("Droid Sans Mono",14), selectmode="single")
+
+        self.scroll = Scrollbar()
+        self.scroll.grid(row=1, column=1, rowspan=5, sticky="ns")
+        self.scroll.config(command=self.tracklistbox.yview)
+
+        self.tracklistbox.config(yscrollcommand=self.scroll.set)
         self.tracklistbox.grid(row=1, column=0, padx=5, rowspan=5)
 
         for item in trackList:
@@ -171,19 +178,21 @@ class pyPlayGUI:
         self.tracklistbox.select_set(0)
 
         self.play_button = Button(master, text="PLAY", command=self.play, height=5, width=7, bg="lightgray")
-        self.play_button.grid(row=1, column=1)
+        self.play_button.grid(row=1, column=2, padx=25)
+
+#        self.tracklistbox.bind('<space>',self.play)  DOESN'T WORK - and binding to button requires focus
 
         self.stop_button = Button(master, text="STOP", command=self.stop, height=5, width=7)
-        self.stop_button.grid(row=2, column=1)
+        self.stop_button.grid(row=2, column=2)
 
         self.pause_button = Button(master, text="PAUSE", command=self.pause, height=5, width=7)
-        self.pause_button.grid(row=3, column=1)
+        self.pause_button.grid(row=3, column=2)
 
         self.skipfwd_button = Button(master, text="30 >", command=self.skipfwd)
-        self.skipfwd_button.grid(row=4, column=1)
+        self.skipfwd_button.grid(row=4, column=2)
 
         self.skipback_button = Button(master, text="< 30", command=self.skipback)
-        self.skipback_button.grid(row=5, column=1)
+        self.skipback_button.grid(row=5, column=2)
 
         self.close_button = Button(master, text="Close app", command=self.close)
         self.close_button.grid(row=6, column=0)
@@ -192,10 +201,10 @@ class pyPlayGUI:
         self.nowPlaying.grid(row=7, column=0)
 
         self.outTimeWord = Label(master, text="Out time:")
-        self.outTimeWord.grid(row=7, column=1)
+        self.outTimeWord.grid(row=7, column=2)
 
         self.outTimeLabel = Label(master, text="        ", font=("Droid Sans Mono",14))
-        self.outTimeLabel.grid(row=8, column=1)
+        self.outTimeLabel.grid(row=8, column=2)
 
 
     def play(self):
@@ -252,6 +261,8 @@ root = Tk()
 root.geometry('720x540')
 my_gui = pyPlayGUI(root)
 
+
+
 time1 = ''
 clock = Label(root, font=('Droid Sans Mono', 36))
 clock.grid(row=8, column=0)
@@ -270,7 +281,7 @@ def tick():
 tick()
 
 playinglabel = Label(root, font=('Droid Sans Mono', 10))
-playinglabel.grid(row=6, column=1)
+playinglabel.grid(row=6, column=2)
 def checkplaying():
     global playerprocess, playing, trackindex
     if playing:
@@ -293,4 +304,3 @@ def checkplaying():
 checkplaying()
 
 root.mainloop()
-
